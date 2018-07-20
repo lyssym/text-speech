@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>TextSpeech</display-name>
+  <context-param> 
+	 <param-name>webAppRootKey</param-name> 
+	 <param-value>TextSpeech.root</param-value> 
+  </context-param> 
+  <servlet>   
+    <servlet-name>SpeechServlet</servlet-name>
+    <servlet-class>com.bgi.service.SpeechServlet</servlet-class>
+  </servlet>
+  <servlet>   
+    <servlet-name>RecogniteServlet</servlet-name>
+    <servlet-class>com.bgi.service.RecogniteServlet</servlet-class>
+  </servlet>
+  <servlet>   
+    <servlet-name>TranslateServlet</servlet-name>
+    <servlet-class>com.bgi.service.TranslateServlet</servlet-class>
+  </servlet>
+  <servlet>   
+    <servlet-name>KeywordServlet</servlet-name>
+    <servlet-class>com.bgi.service.KeywordServlet</servlet-class>
+  </servlet>
+  <servlet>   
+    <servlet-name>UpdateServlet</servlet-name>
+    <servlet-class>com.bgi.service.UpdateServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>SpeechServlet</servlet-name>
+    <url-pattern>/speech</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TranslateServlet</servlet-name>
+    <url-pattern>/translate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RecogniteServlet</servlet-name>
+    <url-pattern>/recognite</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>KeywordServlet</servlet-name>
+    <url-pattern>/keyword</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateServlet</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+</web-app>

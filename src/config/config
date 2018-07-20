@@ -1,0 +1,25 @@
+# 语音服务debug配置
+debug=false
+
+# 语音识别等待时间
+maxwait=3000
+perwait=200
+
+# 服务id号
+appid=5ae3d2c7
+
+# 音频文件默认路径
+audioroot=/home/liuyong/Documents/Audio/
+
+# google翻译
+googleroot=https://translate.google.cn/
+translate=https://translate.google.cn/translate_a/single?
+jsscript=config/gettk.js
+
+# 关键词抽取及数据分块
+chunker=en-chunker.bin
+pos=en-pos-maxent.bin
+sent=en-sent.bin
+
+# 关键词提取服务
+keyurl=http://192.168.31.100:9190/keyword
