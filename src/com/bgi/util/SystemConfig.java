@@ -30,7 +30,7 @@ public class SystemConfig {
 		try {
 			Properties p = new Properties();
 			InputStream is = null;
-			is = SystemConfig.class.getClassLoader().getResourceAsStream("config/config");
+			is = SystemConfig.class.getClassLoader().getResourceAsStream("config/system.config");
 			p.load(is);
 			
 			APPID = p.getProperty("appid").trim();
